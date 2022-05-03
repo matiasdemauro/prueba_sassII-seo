@@ -325,8 +325,17 @@ footer h3{
     background: none;
 }
 /*------------FIN DE INICIAR SESION/REGISTRO--------------*/
-
-
+/*  inicio de nosotros */
+.about-us{
+    text-align: center;
+    color: #000;
+    font-family: 'Quicksand' , sans-serif;
+}
+.general{
+    color: #000;
+    font-family: 'Quicksand' , sans-serif;
+}
+/*  fin de nosotros */
 
 
 
