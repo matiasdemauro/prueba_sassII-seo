@@ -54,6 +54,7 @@ ul ul{
     list-style: none;
     background-color: rgb(176,167,129,0.9);
     width: 150px;
+    border-radius: 10px;
 }
 .navbar-nav{
     /*border: 2px solid black;*/
@@ -67,7 +68,7 @@ a{
 }
 a:hover{
     text-decoration: none;
-    color: rgb(176,167,129,0.9);
+    color: rgb(255,255,255);
 }
 /* FIN DE MENU */
 .text-right{
@@ -323,7 +324,7 @@ footer h3{
     border-radius: 1em;
     background: none;
 }
-
+/*------------FIN DE INICIAR SESION/REGISTRO--------------*/
 
 
 
