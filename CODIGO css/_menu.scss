@@ -1,0 +1,26 @@
+/* COMIENZO DE MENU */
+.navbar-nav{
+   // border: 2px solid black; 
+    background-color: $color1;
+    flex-direction: row;
+    border-radius: 1em;
+    li{
+        padding-inline: 15px;
+        text-decoration: none;
+        }
+    ul{
+        position: absolute;
+        display: none;
+        list-style: none;
+        background-color: $color1;
+        width: 150px;
+        border-radius: 10px;
+        }   
+    li:hover ul{
+        display: block;
+        color: $color2;
+        text-decoration: none;
+        }
+}
+    
+/* FIN DE MENU */

@@ -5,102 +5,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+//importamos los Partials
+@import "_variables";
+@import "_general";
+@import "_menu";
 
-//declaracion de variables globales
-$var1: 100%;
-$color1: rgb(176,167,129,0.9);
-$color2: rgb(0,0,0);
-$color3: rgba(255,255,255,.3);
-$color4: rgb(255,255,255);
-$font1: 'Roboto Mono', monospace;
-$font2: 'Libre Baskerville', serif;
-$font3: 'Rajdhani', sans-serif;
-$font4: 'Merriweather Sans', sans-serif;
-$font5: 'Secular One', sans-serif;
-
-
-/*Comienzo estilos generales    */
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color:#000;
-    body{
-        background-image: url(../Imagenes/fondo1.jpeg);
-        background-size: cover;
-        background-attachment: fixed;
-    }
-}
-html{
-    scroll-behavior: smooth; /* propiedad con la que se desplaza la pag hacia arriba*/
-}
-.title{
-    font-family: $font1;
-    color: black;
-    margin-bottom: 30px;
-}
-.text-center{
-    font-size: 30px;
-}
-.subir{
-    height: 40px;
-    width: 40px; 
-    border: 5px solid $color1;
-    color: $color2;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    text-align: center;
-    line-height: 30px;
-    border-radius: 50%;
-    box-shadow: 0 0 20px 0 $color3;
-}
-.subir:hover{
-    color: $color2;
-}
-.text-right{
-    display: flex;
-    flex-direction: column;
-    margin-right: 20px;
-}
-/*fin de estilos generales*/
-
-/* COMIENZO DE MENU */
-.navbar-nav{
-    /*border: 2px solid black;*/
-    background-color: $color1;
-    flex-direction: row;
-    border-radius: 1em;
-}
-ul{
-    li{
-    padding-inline: 15px;
-    text-decoration: none;
-    }
-    ul{
-        position: absolute;
-        display: none;
-        list-style: none;
-        background-color: $color1;
-        width: 150px;
-        border-radius: 10px;
-    }   
-    li:hover ul{
-        display: block;
-        color: $color2;
-        text-decoration: none;
-    }
-}
-a{
-    color: $color2;
-    text-decoration: none;
-}
-a:hover{
-    text-decoration: none;
-    color: $color4;
-}    
-/* FIN DE MENU */
 /*  inicio de carrousel +REDES  */
 .carru{
     width: $var1;
@@ -110,7 +19,7 @@ a:hover{
     align-items: center;
     margin-top: 80px;
     .carousel{
-        width: $var1
+        width: $var1;
     }
     .carousel-indicators > li{
         border-radius: 50%;
@@ -136,50 +45,30 @@ a:hover{
     }
 }
 /*  fin de carrosel +REDES  */
+
 /*inicio titulos con h1 y h2*/
-h1{
-    color: $color2;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    /*background-color: rgb(176,167,129,0.9);*/
-    border-radius: 1em;
-    font-family: $font4;
-    
-}
-h2{
-    background-color: $color1;
-    border-radius: 1em;
-    font-family: $font5;
-    color: $color2;
+.cabezal{
     width: $var1;
-    margin-bottom: 80px;
-}
-
-/*fin titulos con  h1 y h2*/
-/* INICIO FOOTER */
-footer{
-    margin-top: 300px;
-    font-family: $font3;
-    text-align: center;
-    h3{
-        font-size: 15px;
-    }
-    .redes{
-        display: flex;
-        justify-content: center;
-        font-size: 20px;
-        letter-spacing: 15px;
-        margin-top: 20px;
-        margin-bottom: 50px;
-        }
-    .redes a{
+    h1{
         color: $color2;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        /*background-color: rgb(176,167,129,0.9);*/
+        border-radius: 1em;
+        font-family: $font4;
+        
+    }
+    h2{
+        background-color: $color1;
+        border-radius: 1em;
+        font-family: $font5;
+        color: $color2;
+        width: $var1;
+        margin-bottom: 80px;
     }
 }
-/* FIN FOOTER */
-
-
-/*FIN DE APLICACIÓN SASS-I SÓLO AL INDEX Y SE LINKEA STYLE(ARCHIVO SASS) AL INDEX*/
+/*fin titulos con  h1 y h2*/
+/*FIN DE APLICACIÓN SASS-I SÓLO AL INDEX */
 
 
 
@@ -321,7 +210,7 @@ footer{
     justify-content: flex-start;
 }
 .check-label{
-   /* border: 1px solid black;*/
+    /* border: 1px solid black;*/
     margin: 10px;
     color: #000;
     
@@ -330,9 +219,7 @@ footer{
     color: rgb(0,0,0,0.5);
 }
 .check-input{
-    
-   /* border: 1px solid green;*/
-   
+    /* border: 1px solid green;*/
     width: 95%;
     padding: 5px;
     border: none;
