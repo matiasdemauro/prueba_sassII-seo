@@ -5,6 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital@1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
 /*Comienzo estilos generales    */
 * {
   margin: 0;
@@ -13,10 +14,6 @@
   color: #000;
   /* INICIO FOOTER */
   /* FIN FOOTER */
-}
-* html {
-  scroll-behavior: smooth;
-  /* propiedad con la que se desplaza la pag hacia arriba*/
 }
 * .text-right {
   display: flex;
@@ -91,6 +88,159 @@
 }
 
 /* FIN DE MENU */
+/*INICIO PAG DE CONTACTO*/
+.rectangulo, .section, .section .form, .section .btn, .rectangulo .btn, .rectangulo .form, .rectangulo .section {
+  width: 100%;
+  /*border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+.rectangulo .form, .rectangulo .section, .section .form, .section .section {
+  background: rgba(176, 167, 129, 0.5);
+  border-radius: 1em;
+  box-shadow: 0 0 20px 0 rgba(176, 167, 129, 0.9);
+  border: none;
+  outline: none;
+  width: 320px;
+}
+.rectangulo .form-group, .section .form-group {
+  width: 100%;
+  text-align: center;
+}
+.rectangulo .form-control, .section .form-control {
+  width: 100%;
+  background: none;
+  outline: none;
+  border: none;
+  color: rgb(0, 0, 0);
+  border-bottom: 1px solid black;
+}
+.rectangulo .form-control:hover, .section .form-control:hover {
+  width: 100%;
+  background: none;
+  outline: none;
+  border: none;
+  color: rgb(0, 0, 0);
+  border-bottom: 1px solid black;
+}
+.rectangulo .btn, .section .btn {
+  width: 80%;
+  border: none;
+  background: rgba(176, 167, 129, 0.5);
+  outline: none;
+  color: rgb(0, 0, 0);
+  margin-bottom: 15px;
+}
+.rectangulo .btn:hover, .section .btn:hover {
+  width: 80%;
+  border: none;
+  background: rgba(176, 167, 129, 0.9);
+  outline: none;
+  color: rgb(0, 0, 0);
+}
+
+/* FIN PAG DE CONTACTO*/
+.section {
+  /* border: 2px solid red;*/
+}
+.section .form-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.section .check-label {
+  /* border: 1px solid black;*/
+  margin: 10px;
+  color: rgb(0, 0, 0);
+}
+.section .icon {
+  color: rgba(0, 0, 0, 0.5);
+}
+.section .check-input {
+  /* border: 1px solid green;*/
+  width: 95%;
+  padding: 5px;
+  border: none;
+  border-radius: 1em;
+  background: none;
+}
+
+/*  inicio de nosotros */
+.about-us {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-family: "Quicksand", sans-serif;
+}
+.about-us .general {
+  color: rgb(0, 0, 0);
+  font-family: "Quicksand", sans-serif;
+}
+
+/*fin de nosotros*/
+html {
+  scroll-behavior: smooth;
+  /* propiedad con la que se desplaza la pag hacia arriba*/
+}
+
+.foto-1:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.foto-2:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.container-fluid1 {
+  width: 100%;
+}
+.container-fluid1 .btn-primary {
+  color: rgb(0, 0, 0);
+  background-color: rgba(176, 167, 129, 0.9);
+}
+.container-fluid1 .btn {
+  border: none;
+}
+.container-fluid1 .btn-primary:hover {
+  background-color: rgba(176, 167, 129, 0.9);
+  color: rgb(0, 0, 0);
+}
+.container-fluid1 .row {
+  display: flex;
+  flex-flow: row wrap;
+  /*width: 100%;*/
+  justify-content: space-around;
+}
+.container-fluid1 .card {
+  /*border: 2px solid red;*/
+  padding: 20px;
+  margin: 20px;
+}
+.container-fluid1 .card-text {
+  font-size: 15px;
+}
+.container-fluid1 .card-title {
+  font-size: 20px;
+  display: flex;
+  flex-direction: wrap;
+  justify-content: center;
+}
+.container-fluid1 .subir {
+  height: 40px;
+  width: 40px;
+  border: 5px solid rgb(33, 33, 54);
+  color: rgb(0, 0, 0);
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
+}
+
+/* FIN PAG DE PRODUCTOS */
 /*  inicio de carrousel +REDES  */
 .carru {
   width: 100%;
@@ -117,7 +267,7 @@
   text-align: center;
   margin-top: 30px;
   margin-bottom: 30px;
-  color: #000;
+  color: rgb(0, 0, 0);
   font-family: "Libre Baskerville", serif;
 }
 .carru .import {
@@ -148,167 +298,4 @@
   margin-bottom: 80px;
 }
 
-/*fin titulos con  h1 y h2*/
-/*FIN DE APLICACIÓN SASS-I SÓLO AL INDEX */
-/*NO ES PARTE DEL INDEX, NO LO MODIFIQUÉ*/
-.btn-primary {
-  color: black;
-  background-color: rgba(176, 167, 129, 0.9);
-}
-
-.btn {
-  border: none;
-}
-
-.btn-primary:hover {
-  background-color: rgba(176, 167, 129, 0.9);
-  color: black;
-}
-
-.row {
-  display: flex;
-  flex-flow: row wrap;
-  /*width: 100%;*/
-  justify-content: space-around;
-}
-
-.card {
-  /*border: 2px solid red;*/
-  padding: 20px;
-  margin: 20px;
-}
-
-.card-text {
-  font-size: 15px;
-}
-
-.card-title {
-  font-size: 20px;
-  display: flex;
-  flex-direction: wrap;
-  justify-content: center;
-}
-
-/* FIN PAG DE PRODUCTOS */
-/*INICIO PAG DE CONTACTO*/
-.rectangulo {
-  width: 100%;
-  height: 550px;
-  /*border: 2px solid red; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 50px;
-}
-
-.form {
-  background: rgba(176, 167, 129, 0.5);
-  border-radius: 1em;
-  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.9);
-  border: none;
-  outline: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 320px;
-  font-family: "Quicksand", sans-serif;
-}
-
-.form-group {
-  width: 100%;
-  text-align: center;
-}
-
-.form-control {
-  width: 100%;
-  background: none;
-  outline: none;
-  border: none;
-  color: #000;
-  border-bottom: 1px solid black;
-}
-
-.form-control:hover {
-  width: 100%;
-  background: none;
-  outline: none;
-  border: none;
-  color: #000;
-  border-bottom: 1px solid black;
-}
-
-.btn {
-  width: 80%;
-  border: none;
-  background: rgba(176, 167, 129, 0.5);
-  outline: none;
-  color: #000;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 15px;
-}
-
-.btn:hover {
-  width: 80%;
-  border: none;
-  background: rgba(176, 167, 129, 0.9);
-  outline: none;
-  color: #000;
-}
-
-/* FIN PAG DE CONTACTO*/
-/* INICIO PAG DE INICIO */
-/*------------COMIENZO DE INICIAR SESION/REGISTRO--------------*/
-.section {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  /* border: 2px solid red;*/
-}
-
-.form {
-  /*  border: 2px solid blue;*/
-  font-family: "Quicksand", sans-serif;
-}
-
-.form-group {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-
-.check-label {
-  /* border: 1px solid black;*/
-  margin: 10px;
-  color: #000;
-}
-
-.icon {
-  color: rgba(0, 0, 0, 0.5);
-}
-
-.check-input {
-  /* border: 1px solid green;*/
-  width: 95%;
-  padding: 5px;
-  border: none;
-  border-radius: 1em;
-  background: none;
-}
-
-/*------------FIN DE INICIAR SESION/REGISTRO--------------*/
-/*  inicio de nosotros */
-.about-us {
-  text-align: center;
-  color: #000;
-  font-family: "Quicksand", sans-serif;
-}
-
-.general {
-  color: #000;
-  font-family: "Quicksand", sans-serif;
-}
-
-/*NO ES PARTE DEL INDEX, NO LO MODIFIQUÉ*//*# sourceMappingURL=style.css.map */
+/*fin titulos con  h1 y h2*//*# sourceMappingURL=style.css.map */

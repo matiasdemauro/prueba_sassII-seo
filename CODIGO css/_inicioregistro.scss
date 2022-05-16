@@ -1,0 +1,29 @@
+///*------------COMIENZO DE INICIAR SESION/REGISTRO--------------*/
+.section{
+    @extend .rectangulo;
+    @extend .form;
+    /* border: 2px solid red;*/
+    .form-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    }
+    .check-label{
+        /* border: 1px solid black;*/
+        margin: $size1 - 10;
+        color: $color2;
+        
+    }
+    .icon{
+        color: $color6;
+    }
+    .check-input{
+        /* border: 1px solid green;*/
+        width: $var1 - 5;
+        padding: 5px;
+        border: none;
+        border-radius: 1em;
+        background: none;
+    }
+}
+//*------------FIN DE INICIAR SESION/REGISTRO--------------*/

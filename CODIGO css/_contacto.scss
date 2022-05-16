@@ -1,0 +1,58 @@
+
+/*INICIO PAG DE CONTACTO*/
+.rectangulo{
+    width: $var1;
+    // height: $height + 150;
+     /*border: 2px solid red; */
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-top: $size1 - 10;
+     .form{
+         background: $color5;
+         border-radius: 1em;
+         box-shadow: 0 0 $size1 0 $color1;
+         border: none;
+         outline: none;
+         @extend .rectangulo;
+         width: $width - 180;
+     }
+     .form-group{
+         width: $var1;
+         text-align: center;
+         
+     }
+     .form-control{
+         width: $var1;
+         background: none;
+         outline: none;
+         border: none;
+         color: $color2;
+         border-bottom: 1px solid black;
+     }
+     .form-control:hover{
+         width: $var1;
+         background: none;
+         outline: none;
+         border: none;
+         color: $color2;
+         border-bottom: 1px solid black;
+     }
+     .btn{
+         width: ($var1)-20;
+         border: none;
+         background: $color5;
+         outline: none;
+         color: $color2;
+         @extend .rectangulo;
+         margin-bottom: $size1 - 5;
+     }
+     .btn:hover{
+         width: ($var1)-20;
+         border: none;
+         background: $color1;
+         outline: none;
+         color: $color2;
+     }
+ }
+ /* FIN PAG DE CONTACTO*/

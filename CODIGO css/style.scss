@@ -5,10 +5,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 //importamos los Partials
 @import "_variables";
 @import "_general";
 @import "_menu";
+@import "_contacto";
+@import "_inicioregistro";
+@import "_nosotros";
+@import "_producto";
 
 /*  inicio de carrousel +REDES  */
 .carru{
@@ -22,7 +27,7 @@
         width: $var1;
     }
     .carousel-indicators > li{
-        border-radius: 50%;
+        border-radius: $var2;
         height: 15px;
         width: 15px;
     }
@@ -31,15 +36,15 @@
         margin-top: 250px;
     }
     .tex{
-        font-size: 20px;
+        font-size: $size1;
         text-align: center;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        color: #000;
+        margin-top: $size1 + 10;;
+        margin-bottom: $size1 + 10;
+        color: $color2;
         font-family: $font2;
     }
     .import{
-        font-size: 30px;
+        font-size: $size1 + 10;
         text-align: center;
         color: $color2;
     }
@@ -51,8 +56,8 @@
     width: $var1;
     h1{
         color: $color2;
-        margin-top: 20px;
-        margin-bottom: 30px;
+        margin-top: $size1;
+        margin-bottom: $size1 + 10;
         /*background-color: rgb(176,167,129,0.9);*/
         border-radius: 1em;
         font-family: $font4;
@@ -64,177 +69,12 @@
         font-family: $font5;
         color: $color2;
         width: $var1;
-        margin-bottom: 80px;
+        margin-bottom: $size1 + 60;
     }
 }
 /*fin titulos con  h1 y h2*/
-/*FIN DE APLICACIÓN SASS-I SÓLO AL INDEX */
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-/*NO ES PARTE DEL INDEX, NO LO MODIFIQUÉ*/
-.btn-primary{
-    color: black;
-    background-color:  rgb(176,167,129,0.9);
-}
-.btn{
-    border: none;
-}
-.btn-primary:hover{
-    background-color:  rgb(176,167,129,0.9);
-    color: black;
-}
-.row{
-    display: flex;
-    flex-flow: row wrap;
-    /*width: 100%;*/
-    justify-content: space-around;
-}
-.card{
-    /*border: 2px solid red;*/
-    padding: 20px;
-    margin: 20px;
-}
-.card-text{
-    font-size: 15px;
-}
-.card-title{
-    font-size: 20px;
-    display: flex;
-    flex-direction: wrap;
-    justify-content: center;
-}
-
-
-/* FIN PAG DE PRODUCTOS */
-
-/*INICIO PAG DE CONTACTO*/
-.rectangulo{
-    width: 100%;
-    height: 550px;
-    /*border: 2px solid red; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
-}
-.form{
-    background: rgb(176,167,129,0.5);
-    border-radius: 1em;
-    box-shadow: 0 0 20px 0 rgba(255,255,255,.9);
-    border: none;
-    outline: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 320px;
-    font-family: "Quicksand" , sans-serif;
-    
-    
-}
-.form-group{
-    width: 100%;
-    text-align: center;
-    
-}
-.form-control{
-    width: 100%;
-    background: none;
-    outline: none;
-    border: none;
-    color: #000;
-    border-bottom: 1px solid black;
-    
-    
-}
-.form-control:hover{
-    width: 100%;
-    background: none;
-    outline: none;
-    border: none;
-    color: #000;
-    border-bottom: 1px solid black;
-    
-}
-.btn{
-    width: 80%;
-    border: none;
-    background: rgb(176,167,129,0.5);
-    outline: none;
-    color:#000;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 15px;
-}
-.btn:hover{
-    width: 80%;
-    border: none;
-    background: rgb(176,167,129,0.9);
-    outline: none;
-    color:#000;
-}
-/* FIN PAG DE CONTACTO*/
-
-/* INICIO PAG DE INICIO */
-
-
-
-
-/*------------COMIENZO DE INICIAR SESION/REGISTRO--------------*/
-.section{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-   /* border: 2px solid red;*/
-}
-.form{
-  /*  border: 2px solid blue;*/
-    font-family: 'Quicksand' , sans-serif;
-}
-.form-group{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-}
-.check-label{
-    /* border: 1px solid black;*/
-    margin: 10px;
-    color: #000;
-    
-}
-.icon{
-    color: rgb(0,0,0,0.5);
-}
-.check-input{
-    /* border: 1px solid green;*/
-    width: 95%;
-    padding: 5px;
-    border: none;
-    border-radius: 1em;
-    background: none;
-}
-/*------------FIN DE INICIAR SESION/REGISTRO--------------*/
-/*  inicio de nosotros */
-.about-us{
-    text-align: center;
-    color: #000;
-    font-family: 'Quicksand' , sans-serif;
-}
-.general{
-    color: #000;
-    font-family: 'Quicksand' , sans-serif;
-}
-/*NO ES PARTE DEL INDEX, NO LO MODIFIQUÉ*/

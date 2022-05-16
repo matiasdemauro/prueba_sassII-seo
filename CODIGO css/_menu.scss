@@ -5,7 +5,7 @@
     flex-direction: row;
     border-radius: 1em;
     li{
-        padding-inline: 15px;
+        padding-inline: $size1 - 5 ;
         text-decoration: none;
         }
     ul{
@@ -14,7 +14,7 @@
         list-style: none;
         background-color: $color1;
         width: 150px;
-        border-radius: 10px;
+        border-radius: $size1 - 10;
         }   
     li:hover ul{
         display: block;
