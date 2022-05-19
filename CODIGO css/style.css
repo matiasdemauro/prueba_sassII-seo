@@ -168,14 +168,28 @@
 }
 
 /*  inicio de nosotros */
+h1 {
+  margin-top: 30px;
+}
+
 .about-us {
   text-align: center;
   color: rgb(0, 0, 0);
   font-family: "Quicksand", sans-serif;
+  font-size: 28px;
+  margin-top: 30px;
 }
-.about-us .general {
-  color: rgb(0, 0, 0);
+
+.general2, .general3, .general4 {
   font-family: "Quicksand", sans-serif;
+  color: black;
+  font-size: 20px;
+}
+
+.general1 {
+  font-family: cursive;
+  color: black;
+  font-size: 20px;
 }
 
 /*fin de nosotros*/
@@ -189,6 +203,118 @@ html {
 }
 
 .foto-2:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.foto-3:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.foto-4:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.foto-5:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.foto-6:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.foto-7:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.foto-8:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.foto-9:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.foto-10:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.foto-11:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.foto-12:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.foto-13:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.foto-14:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.foto-15:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.foto-16:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.foto-17:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.foto-18:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.foto-19:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.foto-20:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.foto-21:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.foto-22:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.foto-23:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.foto-24:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.foto-25:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.foto-26:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.foto-27:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.foto-28:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.foto-29:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.foto-30:hover {
   transform: scale(1.2, 1.2);
 }
 
@@ -240,6 +366,41 @@ html {
   box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
 }
 
+.tit-titulo1 {
+  background-color: rgba(176, 167, 129, 0.9);
+  width: 100%;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+.tit-titulo2 {
+  background-color: rgba(176, 167, 129, 0.9);
+  width: 100%;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+.tit-titulo3 {
+  background-color: rgba(176, 167, 129, 0.9);
+  width: 100%;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+.tit-titulo4 {
+  background-color: rgba(176, 167, 129, 0.9);
+  width: 100%;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+.tit-titulo5 {
+  background-color: rgba(176, 167, 129, 0.9);
+  width: 100%;
+  text-align: center;
+  border-radius: 1rem;
+}
+
 /* FIN PAG DE PRODUCTOS */
 /*  inicio de carrousel +REDES  */
 .carru {
@@ -271,7 +432,7 @@ html {
   font-family: "Libre Baskerville", serif;
 }
 .carru .import {
-  font-size: 30px;
+  font-size: 35px;
   text-align: center;
   color: rgb(0, 0, 0);
 }

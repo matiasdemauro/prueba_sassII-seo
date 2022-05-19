@@ -36,7 +36,7 @@
         margin-top: 250px;
     }
     .tex{
-        font-size: $size1;
+        font-size: map-get($titulos, titulo1);
         text-align: center;
         margin-top: $size1 + 10;;
         margin-bottom: $size1 + 10;
@@ -44,7 +44,7 @@
         font-family: $font2;
     }
     .import{
-        font-size: $size1 + 10;
+        font-size: map-get($titulos , titulo2 );
         text-align: center;
         color: $color2;
     }
@@ -73,6 +73,9 @@
     }
 }
 /*fin titulos con  h1 y h2*/
+
+
+
 
 
 
